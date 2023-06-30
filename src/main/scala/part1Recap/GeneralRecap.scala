@@ -98,9 +98,9 @@ object GeneralRecap extends App{
   // Options and Try
 
   val anOption = Some(2)
-  val aTry = try {
-      throw new Exception
-  }
+//  val aTry = try {
+//      throw new Exception
+//  }
 
   // pattern matching
   val unknown = 2
