@@ -47,4 +47,14 @@ object ChildActor extends App{
     - /user = user-level guardian
     - / = the root guardian
    */
+  /** Actor Selection */
+
+  val childSelection = system.actorSelection("/user/MeAsParent/firstKid")
+  //this works well with "context"
+  childSelection ! "I found you!"
+
+
+  /*
+  NEVER!! PASS ACTOR MUTABLE STATE, OR THE 'THIS' REFERENCE, TO CHILD ACTORS.
+   */
 }
